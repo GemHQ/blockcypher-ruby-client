@@ -178,12 +178,8 @@ module BlockCypher
       api_http_post('/addrs', json_payload: payload)
     end
 
-<<<<<<< HEAD
-    def address_details(address, unspent_only: false, limit: 50, before: nil, omit_wallet_addresses: false)
-=======
-    def address_details(address, unspent_only: false, limit: 50,
-                        before: nil, omit_wallet_addresses: false)
->>>>>>> 43bbe381d7f83684fa16566c0ecb0626c719475f
+    def address_details(address, unspent_only: false, limit: 50, before: nil,
+                        omit_wallet_addresses: false)
       query = {
         unspentOnly: unspent_only,
         limit: limit,
